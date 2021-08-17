@@ -64,12 +64,17 @@ function deleteGrid(){
 
 function getSize(){
 
-    let size =  parseInt(prompt("Please enter the the number of squares per side for the new grid (no more than 100)"));
+    let key = false;
+    let size = 64;
+
+    while (!key){
+     size =  parseInt(prompt("Please enter the the number of squares per side for the new grid (no more than 100)"));
     console.log(typeof(size));
 
-    while(typeof(size) !== 'number' || size>100){
-         size = parseInt(prompt("Error, Please enter the the number of squares per side for the new grid (no more than 100)"));
-         console.log(typeof(size));
+        if(size<=100 && typeof(size) === 'number'){
+        key = true;
+        }
+
     }
 
     deleteGrid();
