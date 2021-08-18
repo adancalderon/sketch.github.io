@@ -4,7 +4,7 @@ const container = document.getElementById('container');
 
 //console.log(container.children);
 
-let squarenum = 4;
+let squarenum = 5;
 
 
 function generateGrid(squarenum){
@@ -69,7 +69,7 @@ function getSize(){
 
     while (!key){
      size =  parseInt(prompt("Please enter the the number of squares per side for the new grid (no more than 100)"));
-    console.log(typeof(size));
+        //console.log(typeof(size));
 
         if(size<=100 && typeof(size) === 'number'){
         key = true;

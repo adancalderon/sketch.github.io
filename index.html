@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,19 +12,21 @@
 
 <body>
 
-
-
     <h1>Etch-a-sketch</h1>
-    <hr>
-    <div id='container'>
+
+    <div id='pagewrapper'>
+        <hr>
+        <div id='container'>
+        </div>
+        <hr>
+        <center>
+            <button type="button" id="reset" onclick="getSize()">RESET GRID</button>
+            <!-- <button type="button" id="del" onclick="deleteGrid()">Delete GRID</button> -->
+        </center>
     </div>
-    <hr>
-    <center>
-    <button type="button" id="reset" onclick="getSize()">RESET GRID</button>
-    <!-- <button type="button" id="del" onclick="deleteGrid()">Delete GRID</button> -->
-    </center>
 
 </body>
+
 <script src="script.js"></script>
 
 </html>
